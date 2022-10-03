@@ -1,0 +1,57 @@
+.settings {
+    display: flex;
+    padding: 5%;
+    justify-content: space-between;
+    .settings__wrapper {
+        width: 70%;
+        padding-right: 40px;
+        .settings__wrapper__actions {
+            display: flex;
+            justify-content: space-between;
+            font-weight: 600;
+            font-size: 22px;
+             :nth-child(1) {
+                color: rgba(0, 0, 255, 0.801);
+                cursor: pointer;
+            }
+             :nth-child(2) {
+                cursor: pointer;
+                color: rgba(255, 0, 0, 0.815);
+            }
+        }
+        .settings__wrapper__form {
+            .settings__wrapper__form__profile {
+                margin-top: 20px;
+                margin-bottom: 40px;
+                .settings__wrapper__form__profile__pic {
+                    display: flex;
+                    position: relative;
+                    align-items: center;
+                    .profileAvatar {
+                        width: 60px;
+                        margin-right: 5px;
+                        height: 60px;
+                        border: double 4px white;
+                    }
+                }
+            }
+            .settings__wrapper__form__group {
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 40px;
+                input {
+                    padding: 5px;
+                    border: none;
+                    border-bottom: solid 1px grey;
+                }
+                label {
+                    padding: 5px;
+                }
+            }
+            .settings__wrapper__form__updateBtn {
+                margin: 0 50%;
+                transform: translateX(-50%);
+            }
+        }
+    }
+}

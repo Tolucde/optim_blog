@@ -1,0 +1,23 @@
+.singlePost {
+    flex: 1;
+    margin-right: 60px;
+    .singlePost__image {
+        width: 100%;
+        margin: 0 auto;
+        height: 350px;
+        &.updateMode {
+            height: 300px;
+            width: 400px;
+        }
+        img {
+            height: 100%;
+            width: 100%;
+            background-size: cover;
+        }
+    }
+    .singlePost__edit {
+        padding: 5px 0;
+        display: flex;
+        justify-content: flex-end;
+    }
+}

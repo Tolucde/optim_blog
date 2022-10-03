@@ -1,0 +1,33 @@
+.singlePost__header {
+    text-align: center;
+    margin: 0 auto;
+    width: 60%;
+    padding-bottom: 35px;
+    .singlePost__header__title__input {
+        border: none;
+        outline: none;
+        font-size: 30px;
+        border-bottom: solid 1px black;
+        color: grey;
+        width: 100%;
+    }
+    .singlePost__header__title {
+        margin-bottom: 25px;
+        font-size: 30px;
+        letter-spacing: 2rem;
+        line-height: 55px;
+    }
+    .singlePost__header__authorDate {
+        display: flex;
+        width: fit-content;
+        margin: 0 auto;
+         :not(:last-child) {
+            border-right: solid 1px grey;
+        }
+        p {
+            padding: 0 10px;
+            color: grey;
+            font-weight: 500;
+        }
+    }
+}

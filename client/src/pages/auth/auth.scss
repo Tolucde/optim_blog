@@ -1,0 +1,72 @@
+@import '../../global.scss';
+.auth {
+    height: calc(100vh - 80px);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    .auth__header {
+        h1 {
+            font-size: 40px;
+            font-weight: 500;
+            margin-bottom: 20px;
+        }
+    }
+    .auth__form {
+        width: 40%;
+        max-width: 400px;
+        min-width: 300px;
+        .auth__form__group {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            input {
+                padding: 15px 40px;
+                font-size: 14px;
+                box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+                border: none;
+                border-radius: 5px;
+                font-weight: 600;
+                &:focus {
+                    border: solid 2px black;
+                }
+                &::placeholder {
+                    font-weight: 400;
+                    padding: 0 2px;
+                }
+            }
+            label {
+                padding: 10px 0;
+                font-weight: 500;
+                display: flex;
+                align-items: center;
+            }
+            .icon {
+                position: absolute;
+                bottom: 12px;
+                border-right: dashed 2px grey;
+                padding-right: 4px;
+                left: 10px;
+            }
+        }
+        .auth__form__registerBtn {
+            margin-top: 10px;
+            width: 100% !important;
+        }
+    }
+    .auth__switch {
+        background-color: rgb(193, 235, 140);
+        border-radius: 5px;
+        margin-top: 20px;
+        width: 40%;
+        max-width: 400px;
+        padding: 10px;
+        text-align: center;
+        min-width: 300px;
+        h3 {
+            font-weight: 400;
+            margin-bottom: 10px;
+        }
+    }
+}

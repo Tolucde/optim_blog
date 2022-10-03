@@ -1,0 +1,21 @@
+$primaryColor: #262c7c;
+$secondaryColor: #f2f3f7;
+$shadow: 0 4px 8px #bec1e034;
+$inputShadow: 4px 4px 8px 2px #2d2d3034;
+@mixin mobile {
+    @media (max-width: 700px) {
+        @content;
+    }
+}
+
+a {
+    position: relative;
+    &:after {
+        position: relative;
+    }
+    &:hover {
+        &:after {
+            width: 100%;
+        }
+    }
+}

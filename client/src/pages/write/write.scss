@@ -1,0 +1,46 @@
+.write {
+    padding: 1% 5%;
+    .write__image {
+        width: 100%;
+        height: 470px;
+        object-fit: cover;
+    }
+    .write__form {
+        margin-top: 20px;
+        position: relative;
+        .write__form__publishBtn {
+            position: absolute;
+            right: 0;
+            top: 50px;
+        }
+        .write__form__group {
+            display: flex;
+            align-items: center;
+            .write__form__group__addIcon {
+                border-radius: 50%;
+                margin-right: 7px;
+                height: 35px;
+                width: 35px;
+                border: solid 1px grey;
+            }
+            .write__form__group__input {
+                border: none;
+                font-size: 22px;
+                outline: none;
+                padding: 3px;
+                width: 65%;
+                font-weight: 500;
+                border-bottom: dashed 1px grey;
+            }
+            .write__form__group__textArea {
+                outline: none;
+                border: dashed 1px grey;
+                font-size: 18px;
+                height: 400px;
+                margin-top: 20px;
+                padding: 15px;
+                width: 70%;
+            }
+        }
+    }
+}

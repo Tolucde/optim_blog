@@ -1,0 +1,47 @@
+@import '../../global.scss';
+.heroContainer {
+    padding: 0 5%;
+    .hero {
+        display: flex;
+        @include mobile {
+            flex-direction: column;
+        }
+        .hero__image {
+            margin-right: 35px;
+            width: 70%;
+            @include mobile {
+                width: 100%;
+            }
+            img {
+                width: 100%;
+                height: 500px;
+            }
+        }
+        .hero__slider {
+            width: 30%;
+            display: flex;
+            flex-direction: column;
+            @include mobile {
+                width: 100%;
+            }
+            .hero__slider__image {
+                width: 100%;
+                img {
+                    width: 100%;
+                    height: 500px;
+                }
+            }
+            .hero__slider__actions {
+                align-self: flex-end;
+                 :not(:last-child) {
+                    margin-right: 10px;
+                }
+                .hero__slider__actions__arrow {
+                    background-color: yellow;
+                    height: 30px;
+                    width: 30px;
+                }
+            }
+        }
+    }
+}
